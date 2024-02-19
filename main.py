@@ -1,3 +1,3 @@
 import factorSum
 import onlyPositive
-
+import interceptPoint
