@@ -1,10 +1,11 @@
 def is_prime(n):
     if n <= 1:
         return False
-    for i in range(2, int(n**0.5) + 1):
+    for i in range(2, int(n ** 0.5) + 1):
         if n % i == 0:
             return False
     return True
+
 
 def factorSum(num):
     if num <= 1:
@@ -17,11 +18,13 @@ def factorSum(num):
             num //= i
     return sum(set(prime_factors))
 
-# Example usage:
-number = int(input("Enter an integer greater than 1: "))
-result = factorSum(number)
 
-if result is not None:
-    print(f"The sum of prime factors of {number} is: {result}")
-else:
-    print("Invalid input. Please enter an integer greater than 1.")
+# Example usage:
+if __name__ == '__main2__':
+    number = int(input("Enter an integer greater than 1: "))
+    result = factorSum(number)
+
+    if result is not None:
+        print(f"The sum of prime factors of {number} is: {result}")
+    else:
+        print("Invalid input. Please enter an integer greater than 1.")
